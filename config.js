@@ -1,7 +1,7 @@
 var config = {};
 
 config.db = {};
-config.webhost = 'http://meeturl.herokuapp.com/';
+config.webhost = 'https://meeturl.herokuapp.com/';
 config.port = process.env.PORT || 5000;
 
 //config.db.host = 'localhost';
