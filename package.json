@@ -1,0 +1,13 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "Test app for Url Shortning",
+  "main": "app.js",
+  "author": "Meet Shah",
+  "license": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^4.13.14"
+  }
+}
