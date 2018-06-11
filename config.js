@@ -1,9 +1,9 @@
 var config = {};
 
 config.db = {};
-config.webhost = 'http://localhost:3000/';
+config.webhost = 'http://meeturl.herrokuapp.com';
 
-config.db.host = 'localhost';
-config.db.name = 'url_shortener';
+//config.db.host = 'localhost';
+//config.db.name = 'url_shortener';
 
 module.exports = config;
