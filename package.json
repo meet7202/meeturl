@@ -5,6 +5,9 @@
   "main": "app.js",
   "author": "Meet Shah",
   "license": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
