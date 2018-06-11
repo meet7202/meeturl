@@ -15,9 +15,7 @@ var Url = require('./models/url');
 // });
 //mongoose.connect('mongodb://' + config.db.host + '/' + config.db.name);
  mongoose.Promise = global.Promise;
- mongoose.connect('mongodb://' + config.db.host + '/' + config.db.name,{
- 	useMongoClient: true,
- });
+ mongoose.connect(mongodb://meet:password123@ds155730.mlab.com:55730/url_shertener);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
