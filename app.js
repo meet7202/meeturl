@@ -9,13 +9,8 @@ var base58 = require('./base58.js');
 // grab the url model
 var Url = require('./models/url');
 
-// var promise = mongoose.connect('mongodb://' + config.db.host + '/' + config.db.name, {
-//   useMongoClient: true,
-//   /* other options */
-// });
-//mongoose.connect('mongodb://' + config.db.host + '/' + config.db.name);
  mongoose.Promise = global.Promise;
- mongoose.connect('mongodb://meet:password123@ds155730.mlab.com:55730/url_shertener');
+ mongoose.connect('');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -71,8 +66,6 @@ app.get('/:encoded_id', function(req, res){
   Url.findOne({_id: id}, function (err, doc){
     if (doc) {
       res.redirect(doc.long_url);
-      //res.redirect('http://meetshah.tech');
-       //res.send({'shortUrl': long_url});
     } else {
       res.redirect(config.webhost);
     }
